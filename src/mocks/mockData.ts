@@ -1,11 +1,6 @@
-interface MockData {
-  productId: string;
-  productName: string;
-  price: number;
-  boughtDate: string;
-}
+import { IProduct } from "../types/MockData";
 
-const MOCK_DATA: MockData[] = [
+const MOCK_DATA: IProduct[] = [
   {
     productId: "66e1c1df3594bb65169e0f9b",
     productName: "Elegant Granite Fish",
