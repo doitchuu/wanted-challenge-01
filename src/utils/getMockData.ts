@@ -4,7 +4,7 @@ import MOCK_DATA from "../mocks/mockData";
 
 const { PER_PAGE, TIME_RANGE } = NUMBER;
 
-function getMockData(pageNumber: number) {
+function getMockData(pageNumber: number): Promise<{ datas: IProduct[]; isEnd: boolean }> {
   return new Promise((resolve) => {
     setTimeout(() => {
       const datas: IProduct[] = MOCK_DATA.slice(PER_PAGE * pageNumber, PER_PAGE * (pageNumber + 1));
